@@ -1,3 +1,50 @@
-site_name: PrintForge Documentation
+site_name: VFS Print Forge
+
+nav:
+  - Home: index.md
 theme:
-  name: 'material'
+  language: en
+  name: material
+  features: 
+    - navigation.tabs
+    - navigation.sections
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.expand
+    - navigation.path
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - navigation.footer
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/xVtU45zTrk
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - tables
+
+repo_url: https://github.com/VectorForce3D/Print-Forge
